@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import pickle
-app = Flask(_name_)
+app = Flask(__name__)
 model = pickle.load(open("data/moodforge_model.pkl", "rb"))
 vectorizer = pickle.load(open("data/vectorizer.pkl", "rb"))
 # home route
